@@ -1,18 +1,18 @@
-# GPT-Powered Mindmap
+# Visualizing Knowledge Graphs from Text
 
-This is a Python tool that creates knowledge graphs and mind maps using GPT-4. It pulls out concepts and relationships from text and shows them as a graph by NetworkX and Matplotlib.
+## Overview
+This is a Python tool for creating knowledge graphs and visual mind maps using GPT-4. It takes concepts and relationships from text and shows them as a graph by NetworkX and Matplotlib.
 
 ## Features
-- Extracts key concepts and semantic relations from input text using GPT-4.
-- Visualizes the relationships between concepts as a mindmap.
-- Lets domain-specific customizations for improved accuracy.
-
+- **Named Entity Recognition (NER)**: Uses a pretrained BERT-based model (`dslim/bert-base-NER`) from Hugging Face to recognize entities like people, locations, organizations, and more from text.
+- **Relationship Mapping**: Automatically creates relationships between the recognized entities and categorizes them into domains (e.g., `Artificial Intelligence`, `Machine Learning`).
+- **Graph Visualization**: Uses `networkx` and `matplotlib` to give a visual representation of the knowledge grap. It demonstrates how the entities are connected.
 
 ## Installation
+To install and use this project, follow these steps:
 
-To run the project, clone this repository and install the dependencies:
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/Busrara/knowledge-graph-ner.git
+   cd MindMapGPT
 
-```bash
-git clone https://github.com/Busrara/gpt-powered-mindmap.git
-cd gpt-powered-mindmap
-pip install -r requirements.txt
